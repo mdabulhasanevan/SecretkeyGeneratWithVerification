@@ -44,6 +44,7 @@ body {
     border: 1px solid white;
     min-height: 25px;
     min-width: 80px;
+    border-radius: 5px;
    
     
 }
@@ -127,9 +128,19 @@ body {
 }
 
 @media (max-width: 768px) {
+    body{
+        padding: 20px;;
+    }
     .container {
+    
     flex-direction: column;
     }
+
+    .LabelAndDisplay{
+        
+        flex-direction: column;
+    }  
+
     .keypad {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -137,8 +148,13 @@ body {
 
 @media (max-width: 480px) {
     .container {
+        
         flex-direction: column;
         }
+    .LabelAndDisplay{
+       
+        flex-direction: column;
+    }    
     .keypad {
         grid-template-columns: repeat(2, 1fr);
     }

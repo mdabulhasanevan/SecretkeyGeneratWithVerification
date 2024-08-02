@@ -26,13 +26,20 @@ function handleKeyPress(event) {
 
 function submitKey() {
     const messageElement = document.getElementById('message');
-    if (inputKey === secretKey) {
-        messageElement.textContent = 'Success! Keys Match.';
-        messageElement.style.color = 'green';
-    } else {
-        messageElement.textContent = 'Error! Keys Do Not Match.';
-        messageElement.style.color = 'red';
+    if(secretKey!="" && inputKey!=""){
+        if (inputKey === secretKey) {
+            messageElement.textContent = 'Success! Keys Match.';
+            messageElement.style.color = 'green';
+        } else {
+            messageElement.textContent = 'Error! Keys Do Not Match.';
+            messageElement.style.color = 'red';
+        }
     }
+    else{
+        messageElement.textContent = "Error! Secret key or Input key can't be null.";
+        messageElement.style.color = 'yellow';
+    }
+   
 }
 
 function clearInput() {
