@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Key Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="generate-section">
+            <button id="generateKeyBtn">Generate <br> Secret Key</button>
+            <div id="generatedKey" class="key-display"></div>
+           
+            
+        </div>
+
+        <div class="keypad-section">
+            <div class="LabelAndDisplay">
+                <div class="Enter-pin-label">Enter PIN</div>
+                <div id="display" class="display"></div>
+            </div>
+           
+            <div class="keypad">
+                <button class="keypad-btn">1</button>
+                <button class="keypad-btn">2</button>
+                <button class="keypad-btn">3</button>
+                <button class="keypad-btn">4</button>
+                <button class="keypad-btn">5</button>
+                <button class="keypad-btn">6</button>
+                <button class="keypad-btn">7</button>
+                <button class="keypad-btn">8</button>
+                <button class="keypad-btn">9</button>
+                <button id="clearBtn" class="keypad-btn">Clear</button>
+                <button class="keypad-btn">0</button>
+                <button id="deleteBtn" class="keypad-btn">X</button>
+            </div>
+            <button id="submitBtn">Submit</button>
+            <div id="message" class="message"></div>
+        </div>
+
+      
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

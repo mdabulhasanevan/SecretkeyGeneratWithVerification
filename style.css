@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    
+}
+
+.container {
+    width: 80%;
+    
+    padding: 20px;
+    background-color: #060606;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.generate-section {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+
+
+
+.key-display {
+    color: #f0f0f0;
+    
+    background-color: rgb(60, 61, 63);
+    font-size: 20px;
+    padding: 10px 0px;
+    margin: 10px;
+    font-weight: bold;
+    border: 1px solid white;
+    min-height: 25px;
+    min-width: 80px;
+   
+    
+}
+
+
+#generateKeyBtn{
+    color: #f0f0f0;
+    background-color: #007bff;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+ 
+}
+
+.LabelAndDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f0f0f0;
+}
+
+.Enter-pin-label{
+   
+}
+
+.display {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 40px;
+    color: #f0f0f0;
+    border: none;
+    background-color: rgb(60, 61, 63);
+    width: 70%;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.keypad-btn {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.keypad-btn:hover {
+    background-color: #0056b3;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+    background-color: #218838;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    }
+    .keypad {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        }
+    .keypad {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
