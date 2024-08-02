@@ -13,20 +13,27 @@ body {
     width: 80%;
     
     padding: 20px;
-    background-color: #060606;
+    
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: stretch;
+    justify-content: space-between;
+    
+    
    
 }
 
 .generate-section {
+    
     margin-bottom: 20px;
     text-align: center;
     padding: 50px;
+    margin-right: 2px;
+    background-color: #060606;
+    
+   
     
 }
 
@@ -43,7 +50,7 @@ body {
     font-weight: bold;
     border: 1px solid white;
     min-height: 25px;
-    min-width: 80px;
+    min-width: 150px;
     border-radius: 5px;
    
     
@@ -55,9 +62,11 @@ body {
     background-color: #007bff;
     border-radius: 5px;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
     border-radius: 5px;
+    min-height: 25px;
+    min-width: 150px;
  
 }
 
@@ -90,12 +99,13 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 20px;
+    
 }
 
 .keypad-btn {
     padding: 15px;
     font-size: 18px;
-    background-color: #007bff;
+    background-color: rgb(60, 61, 63);
     color: white;
     border: none;
     border-radius: 4px;
