@@ -28,29 +28,37 @@ function submitKey() {
 
         // Create an <i> element for the icon
     const iconOK = document.createElement('i');
-  
+    const message = document.createElement('span');
+
+    message.textContent = "";
     const messageElement = document.getElementById('message');
+    messageElement.textContent="";
     if(secretKey!="" && inputKey!=""){
         if (inputKey === secretKey) {
-            messageElement.textContent = ' Success! Keys Match.';
+            message.textContent = ' Success! Keys Match.';
+            
             messageElement.style.color = 'green';
 
             iconOK.className = 'bi bi-check-circle-fill'; // Add the Bootstrap icon class
             messageElement.appendChild(iconOK);
+            messageElement.appendChild(message);
         } else {
-            messageElement.textContent = 'Error! Keys Do Not Match.';
+           
+            message.textContent = "Error! Keys Do Not Match.  ";
             messageElement.style.color = 'red';
 
-            
-        iconOK.className = 'bi bi-circle-half'; // Add the Bootstrap icon class
+            iconOK.className = 'bi bi-circle-half'; // Add the Bootstrap icon class
             messageElement.appendChild(iconOK);
+            messageElement.appendChild(message);
         }
     }
     else{
-        messageElement.textContent = "Error! Secret key or Input key can't be null.";
-        messageElement.style.color = 'yellow';
+     
+        message.textContent = "Error! Secret key or Input key can't be null. ";
         iconOK.className = 'bi bi-emoji-expressionless-fill'; // Add the Bootstrap icon class
         messageElement.appendChild(iconOK);
+        messageElement.appendChild(message);
+        messageElement.style.color = 'yellow';
        
     }
    

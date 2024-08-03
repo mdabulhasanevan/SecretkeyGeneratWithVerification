@@ -75,7 +75,7 @@ body {
     align-items: center;
     justify-content: space-between;
     color: #f0f0f0;
-    
+    margin-bottom: 20px;
 }
 
 .Enter-pin-label{
@@ -85,7 +85,7 @@ body {
 }
 
 .display {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding: 10px;
     font-size: 24px;
     border: 1px solid #ccc;
