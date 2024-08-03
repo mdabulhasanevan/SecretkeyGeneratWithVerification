@@ -75,10 +75,13 @@ body {
     align-items: center;
     justify-content: space-between;
     color: #f0f0f0;
+    
 }
 
 .Enter-pin-label{
+   align-items: center;
    
+
 }
 
 .display {
@@ -151,6 +154,7 @@ body {
     .LabelAndDisplay{
         
         flex-direction: column;
+
     }  
 
     .keypad {
@@ -159,6 +163,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    body{
+        padding: 20px;;
+    }
     .container {
         
     flex-direction: column;
